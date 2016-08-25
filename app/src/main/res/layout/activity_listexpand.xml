@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/showList"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1FA67B"
+            android:text="伸展listview"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="17dp"/>
+
+
+
+
+
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:src="@drawable/icon_pile"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/take_brunch_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="网点"
+                android:textColor="#999999"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/ic2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:text="网点"
+                    android:visibility="invisible"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/take_brunch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:text="测试网点"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/icon_back_arrow"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/expandLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearTitle">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="#ffffff"
+                    android:visibility="visible"
+                    >
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#999999"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="充电详情"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="#999999"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8F8">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/expandListview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dip"
+                android:listSelector="@android:color/transparent"></ListView>
+            <LinearLayout
+                android:id="@+id/listBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8F8F8">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="#ffffff">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#999999"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="操作记录"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#999999"/>
+            </LinearLayout>
+
+            <ListView
+                android:layout_marginTop="10dp"
+                android:id="@+id/normalListview"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dip"
+                android:listSelector="@android:color/transparent"></ListView>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#1FA67B"/>
+    </LinearLayout>
+
+
+
+</ScrollView>

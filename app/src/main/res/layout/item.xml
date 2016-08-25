@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:background="@android:color/white"
+android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:id="@+id/time"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:text="111"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:id="@+id/operation"
+            android:textSize="16sp"
+            android:layout_marginRight="15dp"
+            android:text="111"
+            />
+    </FrameLayout>
+
+</FrameLayout>
